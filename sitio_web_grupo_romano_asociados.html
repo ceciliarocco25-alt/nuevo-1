@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Romano y Asociados - Soluciones Legales, Societarias y Administrativas</title>
+    <link rel="canonical" href="https://www.gruporomanoasociados.com.ar">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0b1120',
+                            950: '#050811',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                        },
+                        corporate: {
+                            blue: '#1e3a8a',
+                            gold: '#c5a059',
+                            slate: '#334155',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(11, 17, 32, 0.94) 0%, rgba(15, 23, 42, 0.88) 100%), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-corporate-light font-sans text-slate-800 antialiased selection:bg-corporate-gold selection:text-white">
+
+    <!-- Top info bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-corporate-gold"></i> +54 (223) 423-7303</span>
+                <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-envelope text-corporate-gold"></i> gruporomanoasociados@gmail.com</span>
+                <span class="hidden xl:flex items-center gap-2"><i class="fa-solid fa-globe text-corporate-gold"></i> www.gruporomanoasociados.com.ar</span>
+                <span class="hidden lg:flex items-center gap-2"><i class="fa-solid fa-clock text-corporate-gold"></i> Lun a Vie: 9:00 - 18:00 hs</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#seguimiento" class="hover:text-corporate-gold transition-colors flex items-center gap-1 font-medium">
+                    <i class="fa-solid fa-magnifying-glass"></i> Consultar Estado de Trámite
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md text-white shadow-xl border-b border-amber-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="1001080546.png" alt="Grupo Romano y Asociados Logo" class="w-12 h-12 rounded-full object-cover border border-amber-500/40 shadow-md group-hover:scale-105 transition-transform" onerror="this.onerror=null;this.src='https://placehold.co/100x100/0b1120/c5a059?text=GR';">
+                <div>
+                    <span class="font-serif font-bold text-xl tracking-wider block text-white group-hover:text-amber-400 transition-colors">GRUPO ROMANO</span>
+                    <span class="text-[10px] tracking-[0.25em] text-amber-500 uppercase block -mt-1 font-semibold">& Asociados</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-amber-400 transition-colors">Áreas de Práctica</a>
+                <a href="#consulta-virtual" class="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1.5"><i class="fa-solid fa-file-signature text-xs"></i> Consulta Paga (Virtual / Presencial)</a>
+                <a href="#seguimiento" class="hover:text-amber-400 transition-colors">Seguimiento</a>
+                <a href="#nosotros" class="hover:text-amber-400 transition-colors">Nosotros</a>
+                <a href="#cotizador" class="hover:text-amber-400 transition-colors">Cotizador</a>
+                <a href="#contacto" class="hover:text-amber-400 transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Actions CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <button onclick="openModal('modalConsultaPaga')" class="bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-semibold px-4 py-2 rounded-lg text-xs shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 flex items-center gap-1.5 border border-emerald-400/30">
+                    <i class="fa-solid fa-lock text-amber-300"></i>
+                    <span>Consulta Paga (Virtual/Presencial)</span>
+                </button>
+                <button onclick="openModal('modalTurno')" class="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg text-xs shadow-lg shadow-amber-900/30 transition-all hover:scale-105 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <span>Turno</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden text-2xl text-slate-200 hover:text-white focus:outline-none p-1">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-b border-slate-800 px-6 py-5 flex flex-col gap-4 text-sm font-medium">
+            <a href="#inicio" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400 border-b border-slate-800">Inicio</a>
+            <a href="#servicios" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400 border-b border-slate-800">Áreas de Práctica</a>
+            <a href="#consulta-virtual" onclick="toggleMobileMenu()" class="py-2 text-amber-400 font-semibold border-b border-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved"></i> Consulta Paga Virtual o Presencial (Dictamen Escrito)
+            </a>
+            <a href="#seguimiento" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400 border-b border-slate-800">Seguimiento de Trámite</a>
+            <a href="#nosotros" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400 border-b border-slate-800">Nosotros</a>
+            <a href="#cotizador" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400 border-b border-slate-800">Cotizador / Consulta</a>
+            <a href="#contacto" onclick="toggleMobileMenu()" class="py-2 hover:text-amber-400">Contacto</a>
+            <button onclick="toggleMobileMenu(); openModal('modalConsultaPaga')" class="w-full mt-2 bg-emerald-600 text-white font-semibold py-3 rounded-lg flex justify-center items-center gap-2">
+                <i class="fa-solid fa-lock"></i> Solicitar Consulta Paga (Virtual o Presencial)
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg text-white relative py-20 lg:py-32 px-4 sm:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-shield-halved"></i> Dr. Romano Pablo Martín | Dr. Grassi Luis Guillermo | Rocco Cecilia (Gestora y Mandataria)
+                </div>
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    Excelencia y Agilidad en sus <span class="text-amber-400 underline decoration-amber-600/50">Trámites Integrales</span>
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Especialistas en <strong>Gestoría Judicial, Societaria, Automotor, Regularización Dominial y Consultoría Estratégica</strong>. Brindamos respuestas precisas y acompañamiento personalizado para empresas, profesionales y particulares.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#servicios" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-7 py-3.5 rounded-lg shadow-lg hover:shadow-amber-600/20 transition-all flex items-center justify-center gap-2 text-center">
+                        Ver Servicios <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <button onclick="openModal('modalConsultaPaga')" class="bg-gradient-to-r from-emerald-700 to-teal-800 hover:from-emerald-600 hover:to-teal-700 border border-emerald-500/40 text-white font-semibold px-7 py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 text-center shadow-lg shadow-emerald-950/40">
+                        <i class="fa-solid fa-file-shield text-amber-300"></i> Consulta Paga Virtual / Presencial
+                    </button>
+                </div>
+                
+                <!-- Trust Stats -->
+                <div class="pt-10 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <p class="font-serif font-bold text-2xl sm:text-3xl text-amber-400">+25</p>
+                        <p class="text-xs text-slate-400">Años de Trayectoria</p>
+                    </div>
+                    <div>
+                        <p class="font-serif font-bold text-2xl sm:text-3xl text-amber-400">+12k</p>
+                        <p class="text-xs text-slate-400">Trámites Exitosos</p>
+                    </div>
+                    <div>
+                        <p class="font-serif font-bold text-2xl sm:text-3xl text-amber-400">99%</p>
+                        <p class="text-xs text-slate-400">Satisfacción Clientes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Card -->
+            <div class="lg:col-span-5">
+                <div class="bg-navy-900/90 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-amber-500/20 shadow-2xl">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
+                        <h3 class="font-serif font-bold text-lg text-white flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-amber-400"></i> Asesoramiento Inmediato
+                        </h3>
+                        <span class="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-full font-medium">En Línea</span>
+                    </div>
+
+                    <!-- Costo de Consulta -->
+                    <div class="mb-5 p-3.5 bg-slate-950/90 border border-amber-500/30 rounded-xl space-y-2 text-xs">
+                        <div class="flex items-center justify-between pb-2 border-b border-slate-800/80">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-user-check text-amber-400"></i>
+                                <span class="text-slate-200 font-semibold">Consulta Presencial / Virtual:</span>
+                            </div>
+                            <span class="font-bold text-amber-400 text-sm">$ 55.000 ARS</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-file-signature text-emerald-400"></i>
+                                <span class="text-slate-200 font-semibold">Consulta + Informe Escrito:</span>
+                            </div>
+                            <span class="font-bold text-emerald-400 text-sm">$ 100.000 ARS</span>
+                        </div>
+                    </div>
+
+                    <form id="heroQuickForm" onsubmit="handleQuickFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Nombre Completo</label>
+                            <input type="text" id="hero_name" required placeholder="Ej. Carlos Mendoza" class="w-full bg-slate-950/70 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Teléfono / WhatsApp</label>
+                            <input type="tel" id="hero_phone" required placeholder="Ej. 11 5555 4444" class="w-full bg-slate-950/70 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Área del Trámite</label>
+                            <select id="hero_area" required class="w-full bg-slate-950/70 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-slate-300 focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="">Seleccione una opción...</option>
+                                <option value="Trámites Judiciales (Civil / Comercial / Laboral)">Trámites Judiciales (Civil / Comercial / Laboral)</option>
+                                <option value="Concursos y Quiebras">Concursos y Quiebras</option>
+                                <option value="Trámites Judicial Penal">Trámites Judicial Penal</option>
+                                <option value="Trámites Societarios">Trámites Societarios</option>
+                                <option value="Trámites Automotor">Trámites Automotor</option>
+                                <option value="Regularización Dominial">Regularización Dominial</option>
+                                <option value="Consultoría General y Habilitaciones">Consultoría General y Habilitaciones Comerciales</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Detalle de la consulta</label>
+                            <textarea id="hero_details" rows="2" required placeholder="Describa brevemente su necesidad..." class="w-full bg-slate-950/70 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold py-3 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
+                            <span>Enviar por WhatsApp</span>
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tracking Section -->
+    <section id="seguimiento" class="py-16 bg-navy-900 text-white border-y border-amber-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <span class="text-amber-400 font-semibold text-xs tracking-widest uppercase"><i class="fa-solid fa-clock-rotate-left"></i> Transparencia y Control</span>
+                <h2 class="font-serif text-2xl sm:text-4xl font-bold">Portal de Seguimiento de Trámite</h2>
+                <p class="text-slate-300 text-sm sm:text-base">Ingrese su código de seguimiento asignado para verificar el estado de su trámite en tiempo real.</p>
+                
+                <!-- Search bar -->
+                <div class="mt-8 flex flex-col sm:flex-row gap-2 max-w-xl mx-auto">
+                    <div class="relative flex-grow">
+                        <i class="fa-solid fa-hashtag absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input id="trackingInput" type="text" placeholder="Ej: GR-2026-8942 ó AUTO-78" class="w-full bg-slate-950 border border-slate-700 rounded-lg sm:rounded-r-none pl-11 pr-4 py-3.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500">
+                    </div>
+                    <button onclick="simularSeguimiento()" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3.5 rounded-lg sm:rounded-l-none transition-colors flex items-center justify-center gap-2 shrink-0">
+                        <i class="fa-solid fa-magnifying-glass"></i> Consultar
+                    </button>
+                </div>
+                <p class="text-xs text-slate-400">¿Códigos de muestra para probar? Utilice <button onclick="setTrackingDemo('GR-2026-8942')" class="text-amber-400 underline">GR-2026-8942</button> o <button onclick="setTrackingDemo('SOC-2026-1102')" class="text-amber-400 underline">SOC-2026-1102</button></p>
+            </div>
+
+            <!-- Result Box (Hidden by default) -->
+            <div id="trackingResult" class="hidden max-w-3xl mx-auto mt-8 bg-slate-950 rounded-xl p-6 border border-slate-800 shadow-xl">
+                <div id="trackingContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <span class="text-amber-600 font-semibold text-xs tracking-widest uppercase"><i class="fa-solid fa-briefcase"></i> Nuestras Especialidades</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">Soluciones Integrales para Cada Necesidad</h2>
+            <p class="text-slate-600 text-sm sm:text-base">Abordamos cada gestión con celeridad, seguridad jurídica y rigor profesional en los principales organismos nacionales y provinciales.</p>
+        </div>
+
+        <!-- Services Cards Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1: Trámites Judicial Penal -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-handcuffs"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Trámites Judicial Penal</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Asistencia y diligenciamiento ante el Fuero Penal y Correccional. Presentación de escritos, vista de expedientes, exenciones de prisión, exhortos penales y antecedentes.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Exhortos y Oficios en Fuero Penal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Vista de Causas y Escritos Urgentes</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Certificados de Antecedentes y Reincidencia</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Trámites Judicial Penal')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 2: Trámites Judiciales -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Trámites Judiciales (Civil, Comercial y Laboral)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Diligenciamiento de cédulas, mandamientos y oficios Ley 22.172. Trámites ante Juzgados Provinciales, Federales y Cámaras de Apelación. Anotación y levantamiento de embargos e inhibiciones.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Oficios Ley 22.172 y Cédulas Ley / Exhortos</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Trámites en Fueros Civil, Comercial y Laboral</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Inscripciones Cautelares, Embargos e Inhibiciones</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Trámites Judiciales (Civil, Comercial y Laboral)')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 3: Concursos y Quiebras -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Concursos y Quiebras</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Gestión integral en procesos de Concursos Preventivos y Quiebras. Verificación e impugnación de créditos, atención a Sindicaturas, inhibiciones generales de bienes y reestructuración de pasivos.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Verificación e Impugnación de Créditos</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Diligencias y Gestiones en Sindicaturas</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Levantamiento de Inhibiciones Comercial/Bancaria</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Concursos y Quiebras')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 4: Trámites Societarios -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Trámites Societarios</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Constitución y reforma de sociedades (SA, SRL, SAS). Inscripciones en IGJ y DPPJ. Libros rubricados, balances, aumentos de capital, cambio de autoridades y reorganizaciones.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Constitución Express de SAS / SRL</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Inscripción de Directorios y Actas</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Tasa Anual y Control en IGJ</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Trámites Societarios')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 5: Trámites Automotor -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-car font-bold"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Trámites Automotor</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Transferencias de dominio, denuncias de venta, informes de dominio e inhibiciones, inscripción de prendas, levantamiento de embargos y gestión de patentes/radicación.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Transferencias Digitales Urgentes</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Informes de Dominio y Anotaciones</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Bajas, Altas y Cambios de Radicación</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Trámites Automotor')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 6: Regularización Dominial -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-house-flag"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Regularización Dominial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Saneamiento de títulos de propiedad, prescripción adquisitiva (usucapión), Ley de Pierri, mensuras de deslinde, loteos, sucesiones y obtención de escrituras definitivas.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Juicios de Usucapión y Posesión</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Saneamiento e Inscripción en Catastro</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Regularización de Inmuebles Urbanos y Rurales</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Regularización Dominial')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Service 7: Consultoría General -->
+            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">Consultoría General y Habilitaciones</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Asesoramiento integral y preventivo. Gestión de habilitaciones comerciales e industriales municipales, auditoría documental, cumplimiento normativo, planificación patrimonial y estrategia contractual.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Habilitaciones Comerciales y Permisos Municipales</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Dictámenes Legales Técnicos y Contratos</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-600"></i> Asesoramiento Patrimonial y Auditoría Normativa</li>
+                    </ul>
+                </div>
+                <button onclick="solicitarServicio('Consultoría General y Habilitaciones Comerciales')" class="w-full py-2.5 px-4 rounded-lg border border-slate-300 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-slate-700 text-sm font-semibold transition-all flex justify-center items-center gap-2">
+                    Solicitar Información <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURED SECTION: Asistencia Legal Virtual o Presencial Paga con Dictamen Escrito & Confidencial -->
+    <section id="consulta-virtual" class="py-20 bg-gradient-to-b from-navy-900 via-navy-950 to-slate-950 text-white relative overflow-hidden border-t border-amber-500/20">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-user-lock"></i> Servicio Legal Premium Cifrado
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">
+                        Asistencia Legal Paga <br>
+                        <span class="gold-gradient-text">Modalidades Presencial o Virtual</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                        Elija la modalidad de atención que mejor se adapte a sus necesidades: <strong>Consulta Directa (Presencial o Virtual)</strong> o <strong>Consulta con Emisión de Informe y Dictamen Escrito Confidencial</strong> redactado por los profesionales de <strong>Grupo Romano y Asociados</strong>.
+                    </p>
+
+                    <!-- Key Benefits Cards -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+                                <i class="fa-solid fa-street-view text-lg"></i>
+                                <span>Modalidad Flexible</span>
+                            </div>
+                            <p class="text-slate-400 text-xs">Atención Presencial en Belgrano 4195 1° B (Mar del Plata) o Videoconferencia Meet/Zoom a todo el país.</p>
+                        </div>
+
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                                <i class="fa-solid fa-file-circle-check text-lg"></i>
+                                <span>Informe Escrito Opcional</span>
+                            </div>
+                            <p class="text-slate-400 text-xs">Añada un dictamen técnico en PDF membretado, firmado y sellado con el análisis del caso.</p>
+                        </div>
+
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <div class="flex items-center gap-2 text-teal-300 font-bold text-sm">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                                <span>100% Confidencial</span>
+                            </div>
+                            <p class="text-slate-400 text-xs">Garantía bajo estricto secreto profesional y acuerdo NDA digital.</p>
+                        </div>
+
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800 space-y-2">
+                            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                                <span>Respuesta Inmediata</span>
+                            </div>
+                            <p class="text-slate-400 text-xs">Coordinación de agenda o dictamen expresamente adaptados a su urgencia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Steps List -->
+                    <div class="pt-2 border-t border-slate-800">
+                        <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider mb-3">¿Cómo funciona el proceso?</p>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <div class="bg-slate-900/90 p-3 rounded-lg border border-slate-800">
+                                <span class="w-6 h-6 bg-amber-500/20 text-amber-400 rounded-full inline-flex justify-center items-center font-bold mb-1">1</span>
+                                <p class="text-slate-300 font-medium">Seleccione Tipo de Consulta</p>
+                            </div>
+                            <div class="bg-slate-900/90 p-3 rounded-lg border border-slate-800">
+                                <span class="w-6 h-6 bg-amber-500/20 text-amber-400 rounded-full inline-flex justify-center items-center font-bold mb-1">2</span>
+                                <p class="text-slate-300 font-medium">Abone de Forma Segura</p>
+                            </div>
+                            <div class="bg-slate-900/90 p-3 rounded-lg border border-slate-800">
+                                <span class="w-6 h-6 bg-amber-500/20 text-amber-400 rounded-full inline-flex justify-center items-center font-bold mb-1">3</span>
+                                <p class="text-slate-300 font-medium">Reunión / Entrega de Informe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dual Pricing Cards Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Option 1: Simple Consultation -->
+                    <div class="bg-gradient-to-b from-slate-900 to-navy-900 p-6 rounded-3xl border border-slate-700 shadow-xl relative">
+                        <div class="flex justify-between items-start mb-4 pb-4 border-b border-slate-800">
+                            <div>
+                                <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Opción 1</span>
+                                <h3 class="font-serif text-xl font-bold text-white">Consulta Presencial o Virtual</h3>
+                                <p class="text-xs text-slate-400 mt-0.5">Asesoramiento directo y evaluación de caso (45 min)</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="text-2xl sm:text-3xl font-bold text-white font-serif">$ 55.000</span>
+                                <span class="text-slate-400 text-[10px] block">ARS</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300 mb-5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Entrevista en Sede (Belgrano 4195 1°B) o Videollamada.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Análisis verbal de antecedentes y estrategia recomendada.</li>
+                        </ul>
+                        <button onclick="openModal('modalConsultaPaga', 'simple')" class="w-full bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold py-2.5 rounded-xl border border-amber-500/30 transition-all flex justify-center items-center gap-2 text-xs">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Solicitar Consulta ($55.000 ARS)</span>
+                        </button>
+                    </div>
+
+                    <!-- Option 2: Consultation + Written Report -->
+                    <div class="bg-gradient-to-b from-slate-900 via-navy-900 to-slate-950 p-6 rounded-3xl border-2 border-amber-500/50 shadow-2xl relative">
+                        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-amber-700 text-navy-950 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Más Completo
+                        </div>
+
+                        <div class="flex justify-between items-start mb-4 pb-4 border-b border-slate-800">
+                            <div>
+                                <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">Opción 2</span>
+                                <h3 class="font-serif text-xl font-bold text-white">Consulta + Informe Escrito</h3>
+                                <p class="text-xs text-slate-400 mt-0.5">Reunión + Dictamen Técnico Membretado en PDF</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="text-2xl sm:text-3xl font-bold text-amber-400 font-serif">$ 100.000</span>
+                                <span class="text-slate-400 text-[10px] block">ARS</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2 text-xs text-slate-300 mb-5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> <strong>Dictamen Formal por Escrito:</strong> Membretado, firmado y sellado.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Entrevista Presencial o Virtual de 45 minutos.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Revisión exhaustiva de documentación (hasta 15 págs).</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Entrega en 24 a 48 hs hábiles + Acuerdo NDA.</li>
+                        </ul>
+
+                        <button onclick="openModal('modalConsultaPaga', 'dictamen')" class="w-full bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-400 hover:to-amber-600 text-navy-950 font-bold py-3 rounded-xl shadow-xl transition-all transform hover:scale-[1.01] flex justify-center items-center gap-2 text-xs">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span>Solicitar Consulta + Informe Escrito ($100.000 ARS)</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Nosotros -->
+    <section id="nosotros" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto border-t border-slate-200">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 relative">
+                <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1521791136364-798a7bc0d262?auto=format&fit=crop&w=1000&q=80" alt="Grupo Romano y Asociados - Equipo Profesional" class="w-full h-80 sm:h-96 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f172a/c5a059?text=Grupo+Romano+y+Asociados';">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-navy-900 text-white p-4 sm:p-5 rounded-2xl shadow-xl border border-amber-500/30 hidden sm:flex items-center gap-3 max-w-xs">
+                    <img src="1001080546.png" alt="Sello Grupo Romano" class="w-14 h-14 rounded-full object-cover shrink-0 border border-amber-400/50 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/100x100/0b1120/c5a059?text=GR';">
+                    <div>
+                        <p class="font-serif font-bold text-sm text-amber-400">Grupo Romano y Asociados</p>
+                        <p class="text-xs text-slate-300">Abogados y Consultores</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-users"></i> Sobre Nuestra Firma
+                </div>
+                
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
+                    Respaldando sus trámites e intereses con el máximo compromiso
+                </h2>
+
+                <div class="p-6 bg-slate-900 text-white rounded-2xl border-l-4 border-amber-500 shadow-md">
+                    <p class="text-base sm:text-lg font-medium leading-relaxed italic text-amber-100">
+                        "Somos un grupo de profesionales con vasta experiencia en el rubro, con una reconocida trayectoria, excelencia y profesionalismo."
+                    </p>
+                    <p class="text-xs text-amber-400 font-semibold mt-3 text-right">— Grupo Romano y Asociados</p>
+                </div>
+
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Somos una firma de abogados líder comprometida con la defensa de sus intereses y la protección de su patrimonio. Nuestro equipo se destaca por su sólida trayectoria y una profunda especialización en diversas áreas del derecho, lo que nos permite ofrecer un asesoramiento integral, preventivo y de alto impacto. Nos diferenciamos por nuestro rigor técnico, la transparencia en cada proceso y una capacidad de respuesta inmediata ante entornos legales complejos. No solo resolvemos problemas, diseñamos estrategias personalizadas para prevenir riesgos y asegurar el éxito de cada uno de nuestros clientes, ya sean particulares, empresas o grandes corporaciones.
+                </p>
+
+                <div class="grid sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200">
+                    <div class="space-y-1">
+                        <div class="text-amber-600 font-bold text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-shield-check"></i> Ética & Confianza
+                        </div>
+                        <p class="text-xs text-slate-500">Secreto profesional y resguardo total de la documentación recibida.</p>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-amber-600 font-bold text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-gauge-high"></i> Celeridad Procesal
+                        </div>
+                        <p class="text-xs text-slate-500">Minimizamos tiempos administrativos frente a organismos e instancias judiciales.</p>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-amber-600 font-bold text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-handshake"></i> Atención Dedicada
+                        </div>
+                        <p class="text-xs text-slate-500">Seguimiento constante e información clara sobre cada avance del trámite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 pt-12 border-t border-slate-200">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-amber-600 font-semibold text-xs tracking-widest uppercase"><i class="fa-solid fa-user-tie"></i> Equipo de Trabajo</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-navy-900 mt-1">Profesionales al Frente de su Gestión</h3>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">Un equipo interdisciplinario enfocado en brindar soluciones legales y administrativas con precisión y compromiso.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Dr. Romano Pablo Martin -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 transition-all text-center group hover:shadow-lg">
+                    <div class="w-16 h-16 bg-navy-900 text-amber-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform border-2 border-amber-500/40">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-base text-navy-900">Dr. Romano Pablo Martín</h4>
+                    <p class="text-amber-600 font-semibold text-xs mt-0.5">Abogado</p>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Especialista en Derecho Penal, Civil, Concursos, Quiebras y estrategia procesal integral.</p>
+                </div>
+
+                <!-- Dr. Grassi Luis Guillermo -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 transition-all text-center group hover:shadow-lg">
+                    <div class="w-16 h-16 bg-navy-900 text-amber-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform border-2 border-amber-500/40">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-base text-navy-900">Dr. Grassi Luis Guillermo</h4>
+                    <p class="text-amber-600 font-semibold text-xs mt-0.5">Abogado</p>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Especialista en Sociedades, Derecho Mercantil, Asesoramiento de Empresas y Soluciones Corporativas.</p>
+                </div>
+
+                <!-- Dr. Fernandez Alejandro Ariel -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 transition-all text-center group hover:shadow-lg">
+                    <div class="w-16 h-16 bg-navy-900 text-amber-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform border-2 border-amber-500/40">
+                        <i class="fa-solid fa-car-burst"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-base text-navy-900">Dr. Fernández Alejandro Ariel</h4>
+                    <p class="text-amber-600 font-semibold text-xs mt-0.5">Abogado</p>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Especialista en Daños y Perjuicios, Accidentes de Tránsito, Derecho Laboral, Familia y Civil.</p>
+                </div>
+
+                <!-- Rocco Cecilia -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 transition-all text-center group hover:shadow-lg">
+                    <div class="w-16 h-16 bg-navy-900 text-amber-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform border-2 border-amber-500/40">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-base text-navy-900">Rocco Cecilia</h4>
+                    <p class="text-amber-600 font-semibold text-xs mt-0.5">Asistente Jurídica, Gestora y Mandataria Nacional</p>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Especializada en trámites automotor, regularización dominial y gestoría administrativa nacional.</p>
+                </div>
+
+                <!-- Equipo Interdisciplinario -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 transition-all text-center group hover:shadow-lg">
+                    <div class="w-16 h-16 bg-navy-900 text-amber-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform border-2 border-amber-500/40">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-base text-navy-900">Equipo de Trabajo</h4>
+                    <p class="text-amber-600 font-semibold text-xs mt-0.5">Consultores & Gestores</p>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Plantel técnico y administrativo dedicado al seguimiento y aceleración de expedientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Budget Estimator / Wizard Section -->
+    <section id="cotizador" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                <div class="bg-navy-900 text-white p-6 sm:p-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Herramienta Interactiva</span>
+                        <h3 class="font-serif text-2xl font-bold">Simulador de Cotización y Asesoría</h3>
+                    </div>
+                    <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs px-3 py-1.5 rounded-full font-medium">Paso a Paso</span>
+                </div>
+
+                <div class="p-6 sm:p-10">
+                    <!-- Progress Bar -->
+                    <div class="mb-8">
+                        <div class="flex justify-between text-xs font-semibold text-slate-500 mb-2">
+                            <span id="stepLabel1" class="text-amber-600">1. Tipo de Gestión</span>
+                            <span id="stepLabel2">2. Urgencia y Ubicación</span>
+                            <span id="stepLabel3">3. Datos de Contacto</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div id="wizardProgress" class="h-full bg-amber-600 transition-all duration-300 w-1/3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Wizard Form -->
+                    <form id="wizardForm" onsubmit="handleWizardSubmit(event)">
+                        <!-- Step 1 -->
+                    <div id="step1" class="space-y-6">
+                        <h4 class="font-semibold text-slate-800 text-base">Seleccione la categoría del trámite a realizar:</h4>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Trámites Judiciales" class="text-amber-600 focus:ring-amber-500" required checked>
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Trámites Judiciales (Civil / Comercial / Laboral)</p>
+                                    <p class="text-xs text-slate-500">Cédulas, oficios Ley 22.172, inscripciones, embargos</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Concursos y Quiebras" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Concursos y Quiebras</p>
+                                    <p class="text-xs text-slate-500">Verificación de créditos, fuero comercial, inhibiciones</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Trámites Judicial Penal" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Trámites Judicial Penal</p>
+                                    <p class="text-xs text-slate-500">Fuero penal, exhortos, antecedentes, escritos</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Trámites Societarios" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Trámites Societarios</p>
+                                    <p class="text-xs text-slate-500">Constitución SAS/SRL, IGJ, Libros</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Trámites Automotor" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Trámites Automotor</p>
+                                    <p class="text-xs text-slate-500">Transferencias, bajas, prendas, dominios</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Regularización Dominial" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Regularización Dominial</p>
+                                    <p class="text-xs text-slate-500">Usucapión, escrituras, posesiones</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl sm:col-span-2 flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all bg-amber-50/50 border-amber-200">
+                                <input type="radio" name="wiz_service" value="Consulta Legal Presencial / Virtual ($55.000 ARS o $100.000 c/ Informe)" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <p class="font-bold text-sm text-slate-900">Consulta Legal Paga (Presencial o Virtual)</p>
+                                        <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">$55k / $100k</span>
+                                    </div>
+                                    <p class="text-xs text-slate-600">Reunión presencial o videoconferencia de 45 min ($55.000 ARS) o con Dictamen e Informe Escrito ($100.000 ARS).</p>
+                                </div>
+                            </label>
+                            <label class="border-2 border-slate-200 p-4 rounded-xl sm:col-span-2 flex items-center gap-3 cursor-pointer hover:border-amber-500 transition-all">
+                                <input type="radio" name="wiz_service" value="Consultoría General y Habilitaciones Comerciales" class="text-amber-600 focus:ring-amber-500">
+                                <div>
+                                    <p class="font-semibold text-sm text-slate-800">Consultoría General y Habilitaciones Comerciales</p>
+                                    <p class="text-xs text-slate-500">Habilitaciones municipales, asesoramiento preventivo, dictámenes y contratos</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-end pt-4">
+                            <button type="button" onclick="goToStep(2)" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2">
+                                Siguiente <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div id="step2" class="space-y-6 hidden">
+                        <h4 class="font-semibold text-slate-800 text-base">Urgencia y Jurisdicción del Trámite:</h4>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">Plazo de Urgencia</label>
+                                <select name="wiz_urgency" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                                    <option value="Normal (Plazo estándar)">Normal (Plazo estándar de gestión)</option>
+                                    <option value="Urgente (48 hs)">Urgente (Prioridad 48 hs)</option>
+                                    <option value="Muy Urgente / Medida Cautelar (24 hs)">Muy Urgente / Medida Cautelar (24 hs)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">Jurisdicción / Ubicación</label>
+                                <select name="wiz_location" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                                    <option value="Mar del Plata y Zona">Mar del Plata / Costa Atlántica</option>
+                                    <option value="Provincia de Buenos Aires">Provincia de Buenos Aires (Deptos. Judiciales)</option>
+                                    <option value="CABA / IGJ">CABA / Ciudad Autónoma de Buenos Aires</option>
+                                    <option value="Nacional / Otra Provincia">Nacional / Otra Provincia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="goToStep(1)" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-left text-xs"></i> Anterior
+                            </button>
+                            <button type="button" onclick="goToStep(3)" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2">
+                                Siguiente <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div id="step3" class="space-y-6 hidden">
+                        <h4 class="font-semibold text-slate-800 text-base">Datos de contacto para enviar la estimación:</h4>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nombre Completo *</label>
+                                <input type="text" id="wiz_name" required placeholder="Ej. Roberto Gómez" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="wiz_phone" required placeholder="Ej. +54 9 223 555-4433" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Observación adicional (Opcional)</label>
+                            <textarea id="wiz_notes" rows="2" placeholder="Describa detalles o número de autos si posee..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-amber-500"></textarea>
+                        </div>
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="goToStep(2)" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-left text-xs"></i> Anterior
+                            </button>
+                            <button type="submit" class="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-bold px-8 py-2.5 rounded-lg text-sm shadow-md transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                                <span>Solicitar Estimación</span>
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+
+                    <!-- Trust Cards below form -->
+                    <div class="grid sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-slate-200">
+                        <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+                            <i class="fa-solid fa-shield-cat text-amber-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Seguridad Jurídica</h4>
+                                <p class="text-xs text-slate-500">Documentación respaldada y en norma oficial.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+                            <i class="fa-solid fa-bolt text-amber-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Gestión Ágil</h4>
+                                <p class="text-xs text-slate-500">Reducción de plazos de tramitación habituales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+                            <i class="fa-solid fa-file-contract text-amber-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Certeza Presupuestaria</h4>
+                                <p class="text-xs text-slate-500">Honorarios y gastos claros desde el primer día.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & FAQ Section -->
+    <section class="py-20 bg-navy-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <!-- Testimonials Grid -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-amber-400 font-semibold text-xs tracking-widest uppercase">Opiniones Destacadas</span>
+                <h2 class="font-serif text-3xl font-bold mt-2">Confían en Grupo Romano</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-20">
+                <div class="bg-navy-900 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <p class="text-xs text-slate-300 italic mb-4">"Constituyeron nuestra SAS en tiempo récord para comenzar a operar con inversores. La atención societaria del estudio es de primer nivel."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-600/30 text-amber-400 font-bold flex items-center justify-center text-sm">MR</div>
+                        <div>
+                            <p class="font-semibold text-xs text-white">Lic. Martín Rossi</p>
+                            <p class="text-[10px] text-slate-400">CEO - TechVentures Argentina</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-navy-900 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <p class="text-xs text-slate-300 italic mb-4">"Logramos resolver la usucapión de nuestro terreno familiar tras años de estancamiento. Sumamente profesionales y transparentes."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-600/30 text-amber-400 font-bold flex items-center justify-center text-sm">AG</div>
+                        <div>
+                            <p class="font-semibold text-xs text-white">Dra. Andrea Gutiérrez</p>
+                            <p class="text-[10px] text-slate-400">Particular - Regularización Dominial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-navy-900 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <p class="text-xs text-slate-300 italic mb-4">"Gestionan toda la flota vehicular de nuestra distribuidora. Transferencias y levantamiento de prendas de manera impecable."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-600/30 text-amber-400 font-bold flex items-center justify-center text-sm">EB</div>
+                        <div>
+                            <p class="font-semibold text-xs text-white">Eduardo Benítez</p>
+                            <p class="text-[10px] text-slate-400">Gerente de Logística</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="max-w-3xl mx-auto space-y-4">
+                <h3 class="font-serif text-2xl font-bold text-center mb-6">Preguntas Frecuentes</h3>
+                
+                <div class="border border-slate-800 rounded-lg overflow-hidden bg-navy-900">
+                    <button onclick="toggleFaq('faqPaga')" class="w-full text-left p-4 font-semibold text-sm flex justify-between items-center hover:bg-slate-800/50 transition-colors text-amber-400">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-file-shield"></i> ¿Cuáles son los costos y modalidades de la consulta legal?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-xs transition-transform" id="faqPaga_icon"></i>
+                    </button>
+                    <div id="faqPaga" class="hidden p-4 text-xs text-slate-300 border-t border-slate-800 bg-slate-950/50 leading-relaxed space-y-2">
+                        <p>Contamos con dos modalidades para su conveniencia:</p>
+                        <p>1. <strong>Consulta Presencial o Virtual ($ 55.000 ARS):</strong> Reunión privada de 45 minutos en nuestra sede de Mar del Plata o por videollamada para evaluación del caso.</p>
+                        <p>2. <strong>Consulta + Informe por Escrito ($ 100.000 ARS):</strong> Incluye la reunión (presencial o virtual), análisis de documentación previa (hasta 15 páginas) y la emisión de un <strong>Dictamen e Informe Técnico Legal por Escrito en PDF oficial firmado y sellado</strong>, en un plazo de 24 a 48 hs hábiles.</p>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-lg overflow-hidden bg-navy-900">
+                    <button onclick="toggleFaq('faq1')" class="w-full text-left p-4 font-semibold text-sm flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <span>¿Cuánto demora la constitución de una sociedad (SAS / SRL)?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-xs transition-transform" id="faq1_icon"></i>
+                    </button>
+                    <div id="faq1" class="hidden p-4 text-xs text-slate-300 border-t border-slate-800 bg-slate-950/50 leading-relaxed">
+                        El trámite de constitución e inscripción de una sociedad (SAS o SRL) ante la IGJ o DPPJ contempla una demora de entre 15 y 20 días hábiles aproximadamente, sujeto a la verificación de homonimia y aprobación del estatuto por parte del organismo.
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-lg overflow-hidden bg-navy-900">
+                    <button onclick="toggleFaq('faq2')" class="w-full text-left p-4 font-semibold text-sm flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <span>¿Qué documentación necesito para iniciar una regularización dominial?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-xs transition-transform" id="faq2_icon"></i>
+                    </button>
+                    <div id="faq2" class="hidden p-4 text-xs text-slate-300 border-t border-slate-800 bg-slate-950/50 leading-relaxed">
+                        Generalmente requerimos comprobantes de posesión (impuestos, servicios, mejoras abonadas), boleto de compraventa o cesión de derechos previa, y DNI de los titulares poseedores. Realizamos un análisis previo sin costo.
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-lg overflow-hidden bg-navy-900">
+                    <button onclick="toggleFaq('faq3')" class="w-full text-left p-4 font-semibold text-sm flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <span>¿Cómo realizo el seguimiento de mi trámite automotor o judicial?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 text-xs transition-transform" id="faq3_icon"></i>
+                    </button>
+                    <div id="faq3" class="hidden p-4 text-xs text-slate-300 border-t border-slate-800 bg-slate-950/50 leading-relaxed">
+                        Al iniciar su gestión, se le asigna un número de código exclusivo con el cual puede ingresar en nuestro portal web o consultar vía WhatsApp con su gestor a cargo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-amber-600 font-semibold text-xs tracking-widest uppercase"><i class="fa-solid fa-location-dot"></i> Oficinas & Atención</span>
+                    <h2 class="font-serif text-3xl font-bold text-navy-900 mt-2">Póngase en Contacto</h2>
+                    <p class="text-slate-600 text-sm mt-3">Atendemos de manera presencial en nuestras oficinas céntricas y de forma virtual para todo el país.</p>
+                </div>
+
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-building-columns text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Sede Central</h4>
+                            <p class="text-slate-600 text-xs">Belgrano 4195, 1° B</p>
+                            <p class="text-slate-600 text-xs">Mar del Plata, Provincia de Buenos Aires</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Líneas Directas</h4>
+                            <p class="text-slate-600 text-xs">Teléf: +54 (223) 423-7303</p>
+                            <p class="text-slate-600 text-xs">WhatsApp: +54 9 223 423-7303</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Correo Electrónico</h4>
+                            <p class="text-slate-600 text-xs">gruporomanoasociados@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-globe text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Sitio Web Oficial</h4>
+                            <p class="text-slate-600 text-xs">www.gruporomanoasociados.com.ar</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-clock text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Horario de Atención</h4>
+                            <p class="text-slate-600 text-xs">Lunes a Viernes de 09:00 a 18:00 hs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Box -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-48 bg-slate-200 relative flex items-center justify-center">
+                    <iframe src="https://maps.google.com/maps?q=Belgrano+4195,+Mar+del+Plata,+Provincia+de+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Full Contact Form -->
+            <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-lg">
+                <h3 class="font-serif font-bold text-2xl text-navy-900 mb-2">Formulario de Contacto Directo</h3>
+                <p class="text-slate-500 text-xs mb-8">Complete los campos requeridos. Su consulta se enviará directamente a nuestro WhatsApp oficial.</p>
+
+                <form id="contactMainForm" onsubmit="handleMainContact(event)" class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Nombre Completo *</label>
+                            <input type="text" id="contact_name" required placeholder="Juan Pérez" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">DNI / CUIT</label>
+                            <input type="text" id="contact_dni" placeholder="20-30400500-8" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Teléfono / Celular *</label>
+                            <input type="tel" id="contact_phone" required placeholder="11 4444 3333" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email *</label>
+                            <input type="email" id="contact_email" required placeholder="juanperez@ejemplo.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Motivo Principal</label>
+                        <select id="contact_motivo" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-700 focus:outline-none focus:border-amber-500">
+                            <option value="">Seleccionar departamento...</option>
+                            <option value="Departamento Judicial (Civil / Comercial)">Departamento Judicial (Civil / Comercial)</option>
+                            <option value="Concursos y Quiebras">Concursos y Quiebras</option>
+                            <option value="Departamento Judicial Penal">Departamento Judicial Penal (Exhortos / Fuero Penal)</option>
+                            <option value="Departamento Societario (IGJ/DPPJ)">Departamento Societario (IGJ/DPPJ)</option>
+                            <option value="Gestoría Automotor y Motores">Gestoría Automotor y Motores</option>
+                            <option value="Saneamiento y Regularización Dominial">Saneamiento y Regularización Dominial</option>
+                            <option value="Consultoría General y Habilitaciones">Consultoría General y Habilitaciones Comerciales</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Mensaje / Detalle *</label>
+                        <textarea id="contact_mensaje" rows="4" required placeholder="Por favor especifique brevemente su consulta o el estado actual de su trámite..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-amber-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Enviar Consulta por WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-amber-600 rounded flex items-center justify-center text-white font-serif font-bold">R</div>
+                    <span class="font-serif font-bold text-white text-base">GRUPO ROMANO</span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Estudio de Gestoría Jurídica, Societaria, Automotor y Regularización Dominial. Soluciones integrales para la optimización de trámites.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Servicios</h4>
+                <ul class="space-y-2">
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Trámites Judiciales</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Concursos y Quiebras</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Trámites Judicial Penal</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Trámites Societarios</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Trámites Automotor</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Regularización Dominial</a></li>
+                    <li><a href="#servicios" class="hover:text-amber-400 transition-colors">Consultoría y Habilitaciones</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Navegación</h4>
+                <ul class="space-y-2">
+                    <li><a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a></li>
+                    <li><a href="#seguimiento" class="hover:text-amber-400 transition-colors">Seguimiento de Expediente</a></li>
+                    <li><a href="#nosotros" class="hover:text-amber-400 transition-colors">Nosotros</a></li>
+                    <li><a href="#cotizador" class="hover:text-amber-400 transition-colors">Cotizador de Gestión</a></li>
+                    <li><a href="#contacto" class="hover:text-amber-400 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-white text-sm mb-3">Legal & Redes</h4>
+                <p class="mb-3">Síganos en nuestras vías oficiales para novedades normativas:</p>
+                <div class="flex gap-3 text-base">
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center hover:text-amber-400 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center hover:text-amber-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1GX84wtJGq/" target="_blank" rel="noopener noreferrer" title="Facebook Oficial" class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center hover:text-amber-400 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
+            <p>&copy; 2026 Grupo Romano y Asociados. Todos los derechos reservados. | www.gruporomanoasociados.com.ar</p>
+            <p>Diseño e Infraestructura de Gestión Legal Integral.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/5492234237303?text=Hola,%20quisiera%20consultar%20por%20un%20tr%C3%A1mite" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-all">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal: Turnos -->
+    <div id="modalTurno" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border border-slate-200">
+            <button onclick="closeModal('modalTurno')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">&times;</button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-full flex items-center justify-center text-xl mx-auto mb-2">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <h3 class="font-serif font-bold text-xl text-navy-900">Agendar Turno Presencial/Virtual</h3>
+                <p class="text-xs text-slate-500 mt-1">Seleccione la modalidad y la fecha requerida</p>
+            </div>
+            <form onsubmit="handleTurnoSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nombre Completo</label>
+                    <input type="text" id="turno_name" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teléfono</label>
+                    <input type="tel" id="turno_phone" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Modalidad</label>
+                    <select id="turno_modality" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm text-slate-700">
+                        <option value="Presencial (Sede Mar del Plata)">Presencial (Sede Mar del Plata)</option>
+                        <option value="Virtual (Google Meet / Zoom)">Virtual (Google Meet / Zoom)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Fecha Preferida</label>
+                    <input type="date" id="turno_date" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm text-slate-700">
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-lg text-sm shadow flex justify-center items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Confirmar Solicitud vía WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Consulta Específica de Servicio -->
+    <div id="modalConsulta" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border border-slate-200">
+            <button onclick="closeModal('modalConsulta')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">&times;</button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-full flex items-center justify-center text-xl mx-auto mb-2">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <h3 id="modalConsultaTitle" class="font-serif font-bold text-xl text-navy-900">Consulta de Servicio</h3>
+                <p class="text-xs text-slate-500 mt-1">Envíenos sus datos y un gestor especialista tomará su caso</p>
+            </div>
+            <form onsubmit="handleServiceConsultSubmit(event)" class="space-y-4">
+                <input type="hidden" id="modalServiceField" value="">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nombre Completo *</label>
+                    <input type="text" id="service_name" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teléfono / WhatsApp *</label>
+                    <input type="tel" id="service_phone" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Detalle del Trámite</label>
+                    <textarea id="service_details" rows="3" required placeholder="Describa brevemente su necesidad..." class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-lg text-sm shadow transition-colors flex justify-center items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Consultar por WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Consulta Específica de Servicio -->
+    <div id="modalConsulta" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border border-slate-200">
+            <button onclick="closeModal('modalConsulta')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">&times;</button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-full flex items-center justify-center text-xl mx-auto mb-2">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <h3 id="modalConsultaTitle" class="font-serif font-bold text-xl text-navy-900">Consulta de Servicio</h3>
+                <p class="text-xs text-slate-500 mt-1">Envíenos sus datos y un gestor especialista tomará su caso</p>
+            </div>
+            <form onsubmit="handleModalForm(event, 'Consulta por servicio enviada con éxito')" class="space-y-4">
+                <input type="hidden" id="modalServiceField" value="">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nombre Completo *</label>
+                    <input type="text" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teléfono / WhatsApp *</label>
+                    <input type="tel" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Detalle del Trámite</label>
+                    <textarea rows="3" required placeholder="Describa brevemente su necesidad..." class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 rounded-lg text-sm shadow transition-colors">
+                    Enviar Consulta
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: Paid Consultation (Virtual or In-Person) with Option Selection -->
+    <div id="modalConsultaPaga" class="fixed inset-0 bg-navy-950/85 backdrop-blur-md z-50 hidden items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full my-8 overflow-hidden shadow-2xl relative border border-amber-500/30">
+            <!-- Header Modal -->
+            <div class="bg-gradient-to-r from-navy-950 via-navy-900 to-slate-900 p-6 text-white relative">
+                <button onclick="closeModal('modalConsultaPaga')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+                <div class="flex items-center gap-3">
+                    <img src="1001080546.png" alt="Sello Grupo Romano" class="w-12 h-12 rounded-full object-cover border border-amber-500/40 shrink-0 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/100x100/0b1120/c5a059?text=GR';">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-emerald-400 tracking-widest"><i class="fa-solid fa-lock"></i> Servicio Confidencial</span>
+                        <h3 class="font-serif font-bold text-xl text-white">Solicitud de Consulta (Presencial o Virtual)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Form -->
+            <form onsubmit="handlePaidConsultSubmit(event)" class="p-6 space-y-4">
+                <!-- Select Service Level / Pricing Tier -->
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Seleccione Tipo de Servicio *</label>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <label class="border-2 border-slate-300 p-3.5 rounded-xl flex items-start gap-2.5 cursor-pointer hover:border-amber-500 transition-all bg-amber-50/20" onclick="updateConsultationPrice('55000')">
+                            <input type="radio" name="paid_type" id="paid_type_simple" value="Consulta Presencial o Virtual ($55.000)" checked class="mt-1 text-amber-600 focus:ring-amber-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800">Consulta Presencial / Virtual</p>
+                                <p class="text-[11px] font-bold text-amber-600">$ 55.000 ARS</p>
+                                <p class="text-[10px] text-slate-500 leading-tight mt-0.5">Asesoramiento directo en sede o videollamada</p>
+                            </div>
+                        </label>
+                        <label class="border-2 border-slate-300 p-3.5 rounded-xl flex items-start gap-2.5 cursor-pointer hover:border-emerald-500 transition-all bg-emerald-50/20" onclick="updateConsultationPrice('100000')">
+                            <input type="radio" name="paid_type" id="paid_type_dictamen" value="Consulta + Informe Escrito ($100.000)" class="mt-1 text-emerald-600 focus:ring-emerald-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800">Consulta + Informe Escrito</p>
+                                <p class="text-[11px] font-bold text-emerald-600">$ 100.000 ARS</p>
+                                <p class="text-[10px] text-slate-500 leading-tight mt-0.5">Incluye Dictamen membretado y firmado en PDF</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Modalidad de la Consulta *</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="border border-slate-300 p-3 rounded-xl flex items-center gap-2 cursor-pointer hover:border-amber-500 transition-all bg-amber-50/30">
+                            <input type="radio" name="paid_modality" value="Presencial" checked class="text-amber-600 focus:ring-amber-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800"><i class="fa-solid fa-building-user text-amber-600"></i> Presencial</p>
+                                <p class="text-[10px] text-slate-500">Sede Belgrano 4195 1° B, Mar del Plata</p>
+                            </div>
+                        </label>
+                        <label class="border border-slate-300 p-3 rounded-xl flex items-center gap-2 cursor-pointer hover:border-emerald-500 transition-all bg-emerald-50/30">
+                            <input type="radio" name="paid_modality" value="Virtual" class="text-emerald-600 focus:ring-emerald-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800"><i class="fa-solid fa-video text-emerald-600"></i> Virtual (Online)</p>
+                                <p class="text-[10px] text-slate-500">Google Meet / Zoom para todo el país</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellido *</label>
+                        <input type="text" id="paid_name" required placeholder="Dr./Lic./Sr. Juan Carlos Pérez" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">DNI / CUIT (Para Facturación/NDA) *</label>
+                        <input type="text" id="paid_dni" required placeholder="20-33444555-8" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">WhatsApp / Teléfono *</label>
+                        <input type="tel" id="paid_phone" required placeholder="+54 9 223 423-7303" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Correo Electrónico *</label>
+                        <input type="email" id="paid_email" required placeholder="cliente@empresa.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Área Específica del Caso</label>
+                    <select id="paid_area" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm text-slate-700 focus:outline-none focus:border-amber-500">
+                        <option value="Derecho Judicial Penal">Derecho Judicial Penal (Fuero Penal, Exhortos, Causas Urgentes)</option>
+                        <option value="Derecho Judicial / Cautelares">Derecho Judicial (Civil, Comercial, Laboral, Embargos, Ley 22.172)</option>
+                        <option value="Concursos y Quiebras">Concursos y Quiebras (Verificación de Créditos, Fuero Comercial)</option>
+                        <option value="Derecho Societario / Empresarial">Derecho Societario / Empresarial (IGJ / DPPJ / Estatutos)</option>
+                        <option value="Regularización Dominial / Usucapión">Regularización Dominial (Propiedades, Usucapión, Mensuras)</option>
+                        <option value="Derecho Automotor / Dominios">Gestoría Automotor (Transferencias Complejas, Prendas)</option>
+                        <option value="Consultoría Patrimonial / Habilitaciones">Consultoría General, Habilitaciones Comerciales y Estrategia Legal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Detalle de la Consulta *</label>
+                    <textarea id="paid_details" rows="3" required placeholder="Sintetice los hechos, antecedentes e inquietudes concretas que desea tratar en la consulta..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Adjuntar Documentación Relevante (Opcional - Máx. 15 págs)</label>
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-4 text-center bg-slate-50 hover:border-amber-500 transition-colors">
+                        <i class="fa-solid fa-cloud-arrow-up text-2xl text-slate-400 mb-1"></i>
+                        <p class="text-xs text-slate-600 font-medium">Haga clic o arrastre archivos PDF, imágenes o escrituras aquí</p>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Formatos permitidos: PDF, JPG, PNG, DOCX (Cifrado local)</p>
+                        <input type="file" multiple class="hidden" id="paid_files" onchange="showSelectedFiles(this)">
+                        <button type="button" onclick="document.getElementById('paid_files').click()" class="mt-2 text-xs bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold px-3 py-1.5 rounded-lg transition-colors">
+                            Seleccionar Archivos
+                        </button>
+                        <div id="fileListNames" class="mt-2 text-xs font-medium text-emerald-600"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Método de Pago Preferido</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="border border-slate-300 p-3 rounded-xl flex items-center gap-2 cursor-pointer hover:border-emerald-500 transition-all bg-emerald-50/40">
+                            <input type="radio" name="paid_method" value="Mercado Pago" checked class="text-emerald-600 focus:ring-emerald-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800"><i class="fa-solid fa-qrcode text-emerald-600"></i> Mercado Pago</p>
+                                <p class="text-[10px] text-slate-500">Tarjeta, Débito o Dinero en cuenta</p>
+                            </div>
+                        </label>
+                        <label class="border border-slate-300 p-3 rounded-xl flex items-center gap-2 cursor-pointer hover:border-amber-500 transition-all bg-amber-50/40">
+                            <input type="radio" name="paid_method" value="Transferencia Bancaria" class="text-amber-600 focus:ring-amber-500">
+                            <div>
+                                <p class="font-bold text-xs text-slate-800"><i class="fa-solid fa-building-columns text-amber-600"></i> Transferencia CBU</p>
+                                <p class="text-[10px] text-slate-500">Descuento 5% por transferencia</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-left">
+                        <span class="text-xs text-slate-500 block">Total a Abonar:</span>
+                        <span id="consultationTotalPriceDisplay" class="text-2xl font-bold font-serif text-navy-900">$ 55.000 ARS</span>
+                    </div>
+                    <button type="submit" class="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Confirmar & Abonar Consulta</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div id="toastNotification" class="fixed top-5 right-5 z-50 hidden bg-emerald-700 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transition-all transform duration-300">
+        <i class="fa-solid fa-circle-check text-xl text-emerald-300"></i>
+        <span id="toastMessage" class="text-sm font-medium"></span>
+    </div>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        // Modal Controls
+        function openModal(modalId, presetOption) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            if (modalId === 'modalConsultaPaga' && presetOption) {
+                if (presetOption === 'dictamen') {
+                    const dictamenRadio = document.getElementById('paid_type_dictamen');
+                    if (dictamenRadio) {
+                        dictamenRadio.checked = true;
+                        updateConsultationPrice('100000');
+                    }
+                } else {
+                    const simpleRadio = document.getElementById('paid_type_simple');
+                    if (simpleRadio) {
+                        simpleRadio.checked = true;
+                        updateConsultationPrice('55000');
+                    }
+                }
+            }
+        }
+
+        function updateConsultationPrice(amount) {
+            const display = document.getElementById('consultationTotalPriceDisplay');
+            if (display) {
+                if (amount === '100000') {
+                    display.innerText = '$ 100.000 ARS';
+                } else {
+                    display.innerText = '$ 55.000 ARS';
+                }
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        // File Selection Feedback
+        function showSelectedFiles(input) {
+            const list = document.getElementById('fileListNames');
+            if (input.files && input.files.length > 0) {
+                let names = Array.from(input.files).map(f => f.name).join(', ');
+                list.innerText = `Archivos seleccionados (${input.files.length}): ${names}`;
+            } else {
+                list.innerText = '';
+            }
+        }
+
+        function solicitarServicio(nombreServicio) {
+            const titleEl = document.getElementById('modalConsultaTitle');
+            const fieldEl = document.getElementById('modalServiceField');
+            if (titleEl) titleEl.innerText = 'Consulta: ' + nombreServicio;
+            if (fieldEl) fieldEl.value = nombreServicio;
+            openModal('modalConsulta');
+        }
+
+        // Paid Consultation Form Submit Handler
+        function handlePaidConsultSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('paid_name').value;
+            const email = document.getElementById('paid_email').value;
+            showToast(`¡Solicitud registrada! Redirigiendo a pasarela de pago para ${name}...`);
+            
+            setTimeout(() => {
+                showToast(`Se han enviado las instrucciones de la consulta y el comprobante NDA a ${email}.`);
+            }, 3000);
+
+            e.target.reset();
+            const fileList = document.getElementById('fileListNames');
+            if (fileList) fileList.innerText = '';
+            closeModal('modalConsultaPaga');
+        }
+
+        // Toast Notification System
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+            if (toast && toastMsg) {
+                toastMsg.innerText = message;
+                toast.classList.remove('hidden');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 4500);
+            }
+        // Helper function to send message directly to WhatsApp (+54 9 223 423-7303)
+        function sendToWhatsApp(messageText) {
+            const phoneNumber = "5492234237303";
+            const encodedMsg = encodeURIComponent(messageText);
+            const waUrl = `https://wa.me/${phoneNumber}?text=${encodedMsg}`;
+            window.open(waUrl, '_blank');
+        }
+
+        // Form Submit Handlers with WhatsApp integration
+        function handleQuickFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('hero_name').value;
+            const phone = document.getElementById('hero_phone').value;
+            const area = document.getElementById('hero_area').value;
+            const details = document.getElementById('hero_details').value;
+
+            const msg = `*Nueva Consulta Rápida - Grupo Romano & Asociados*\n\n` +
+                        `👤 *Nombre:* ${name}\n` +
+                        `📞 *Teléfono/WA:* ${phone}\n` +
+                        `📋 *Área:* ${area}\n` +
+                        `💬 *Consulta:* ${details}`;
+
+            showToast('¡Redirigiendo a WhatsApp con su consulta!');
+            sendToWhatsApp(msg);
+            e.target.reset();
+        }
+
+        function handleMainContact(e) {
+            e.preventDefault();
+            const name = document.getElementById('contact_name').value;
+            const dni = document.getElementById('contact_dni').value || 'No especificado';
+            const phone = document.getElementById('contact_phone').value;
+            const email = document.getElementById('contact_email').value;
+            const motivo = document.getElementById('contact_motivo').value;
+            const mensaje = document.getElementById('contact_mensaje').value;
+
+            const msg = `*Contacto Institucional - Grupo Romano & Asociados*\n\n` +
+                        `👤 *Nombre:* ${name}\n` +
+                        `🆔 *DNI/CUIT:* ${dni}\n` +
+                        `📞 *Teléfono:* ${phone}\n` +
+                        `✉️ *Email:* ${email}\n` +
+                        `📋 *Departamento:* ${motivo}\n` +
+                        `💬 *Mensaje:* ${mensaje}`;
+
+            showToast('¡Redirigiendo a WhatsApp...');
+            sendToWhatsApp(msg);
+            e.target.reset();
+        }
+
+        function handlePaidConsultSubmit(e) {
+            e.preventDefault();
+            const typeRadio = document.querySelector('input[name="paid_type"]:checked');
+            const type = typeRadio ? typeRadio.value : 'Consulta Presencial o Virtual';
+            const modalityRadio = document.querySelector('input[name="paid_modality"]:checked');
+            const modality = modalityRadio ? modalityRadio.value : 'Presencial';
+            const name = document.getElementById('paid_name').value;
+            const dni = document.getElementById('paid_dni').value;
+            const phone = document.getElementById('paid_phone').value;
+            const email = document.getElementById('paid_email').value;
+            const area = document.getElementById('paid_area').value;
+            const details = document.getElementById('paid_details').value;
+            const methodRadio = document.querySelector('input[name="paid_method"]:checked');
+            const method = methodRadio ? methodRadio.value : 'Mercado Pago';
+
+            const msg = `*Solicitud de Consulta Legal Paga - Grupo Romano & Asociados*\n\n` +
+                        `⭐ *Servicio:* ${type}\n` +
+                        `📍 *Modalidad:* ${modality}\n` +
+                        `👤 *Cliente:* ${name}\n` +
+                        `🆔 *DNI/CUIT:* ${dni}\n` +
+                        `📞 *WhatsApp:* ${phone}\n` +
+                        `✉️ *Email:* ${email}\n` +
+                        `📋 *Área del Caso:* ${area}\n` +
+                        `💳 *Método de Pago Preferido:* ${method}\n` +
+                        `💬 *Detalle:* ${details}`;
+
+            showToast('¡Iniciando solicitud vía WhatsApp!');
+            sendToWhatsApp(msg);
+            e.target.reset();
+            const fileList = document.getElementById('fileListNames');
+            if (fileList) fileList.innerText = '';
+            closeModal('modalConsultaPaga');
+        }
+
+        function handleTurnoSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('turno_name').value;
+            const phone = document.getElementById('turno_phone').value;
+            const modality = document.getElementById('turno_modality').value;
+            const date = document.getElementById('turno_date').value;
+
+            const msg = `*Solicitud de Turno - Grupo Romano & Asociados*\n\n` +
+                        `👤 *Nombre:* ${name}\n` +
+                        `📞 *Teléfono:* ${phone}\n` +
+                        `📍 *Modalidad:* ${modality}\n` +
+                        `📅 *Fecha Pretendida:* ${date}`;
+
+            showToast('¡Redirigiendo para confirmar turno!');
+            sendToWhatsApp(msg);
+            e.target.reset();
+            closeModal('modalTurno');
+        }
+
+        function handleServiceConsultSubmit(e) {
+            e.preventDefault();
+            const serviceField = document.getElementById('modalServiceField').value || 'Servicio Especializado';
+            const name = document.getElementById('service_name').value;
+            const phone = document.getElementById('service_phone').value;
+            const details = document.getElementById('service_details').value;
+
+            const msg = `*Consulta de Servicio: ${serviceField}*\n\n` +
+                        `👤 *Nombre:* ${name}\n` +
+                        `📞 *Teléfono/WA:* ${phone}\n` +
+                        `💬 *Detalle:* ${details}`;
+
+            showToast('¡Enviando consulta por WhatsApp!');
+            sendToWhatsApp(msg);
+            e.target.reset();
+            closeModal('modalConsulta');
+        }
+
+        function handleWizardSubmit(e) {
+            e.preventDefault();
+            const serviceRadio = document.querySelector('input[name="wiz_service"]:checked');
+            const service = serviceRadio ? serviceRadio.value : 'General';
+            const urgencyEl = document.querySelector('select[name="wiz_urgency"]');
+            const urgency = urgencyEl ? urgencyEl.value : 'Normal';
+            const locationEl = document.querySelector('select[name="wiz_location"]');
+            const location = locationEl ? locationEl.value : 'Mar del Plata';
+            const name = document.getElementById('wiz_name').value;
+            const phone = document.getElementById('wiz_phone').value;
+            const notes = document.getElementById('wiz_notes').value || 'Sin observaciones';
+
+            const msg = `*Cotización Estimada Paso a Paso - Grupo Romano & Asociados*\n\n` +
+                        `📋 *Servicio Requerido:* ${service}\n` +
+                        `⏱️ *Urgencia:* ${urgency}\n` +
+                        `📍 *Ubicación/Jurisdicción:* ${location}\n` +
+                        `👤 *Nombre:* ${name}\n` +
+                        `📞 *Contacto:* ${phone}\n` +
+                        `💬 *Observaciones:* ${notes}`;
+
+            showToast('¡Enviando datos de cotización por WhatsApp!');
+            sendToWhatsApp(msg);
+            e.target.reset();
+            goToStep(1);
+        }
+
+        // FAQ Toggle
+        function toggleFaq(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById(id + '_icon');
+            if (el && icon) {
+                if (el.classList.contains('hidden')) {
+                    el.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    el.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
